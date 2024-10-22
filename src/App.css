@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Other styles remain unchanged */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures it takes the full height */
+}
+
+.protected-route, .login-page, .register-page {
+    flex: 1; /* Allow content to grow and fill the available space */
+}
