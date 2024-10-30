@@ -4,6 +4,7 @@ import { AuthProvider, AuthContext } from './context/AuthContext';
 import LoginPage from './components/Auth/LoginPage';
 import RegisterPage from './components/Auth/RegisterPage';
 import Dashboard from './components/Auth/Dashboard'; // Import the Dashboard component
+import Taskbar from './components/Taskbar'; // Import the Taskbar component
 import './App.css';
 
 const ProtectedRoute = ({ children }) => {
@@ -22,6 +23,7 @@ function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
+                <Taskbar /> {/* Add Taskbar here */}
                 <Dashboard /> {/* Use the Dashboard component here */}
               </ProtectedRoute>
             }

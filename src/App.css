@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 * {
     box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -10,7 +11,6 @@ html, body {
     height: 100%;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    overflow: hidden; /* Prevent scrolling */
 }
 
 /* Other styles remain unchanged */
